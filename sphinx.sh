@@ -157,7 +157,6 @@ do
   #rm $ip.nmap # Add before final release
 
   # Reverse DNS Service
-  shodan_key=Eb6707RrT00E5vexFl0clX6xoUL22qM2
   url="https://api.shodan.io/dns/reverse?ips=$ip&key=$shodan_key"
 
   tmp=$(curl -vs -o /dev/null ''$url'' 2>&1 | cut -d ":" -f2)
